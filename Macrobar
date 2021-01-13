@@ -1,0 +1,14 @@
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* MACRO BAR - Thinner Macrobar */
+#macrobar .macrobox {
+    margin-right: 7px
+}
+#macrobar div.macrobox:hover {
+    padding-right: 7px;
+    margin-right: 0px;  
+}
+.macrobox .btn, .macrobox .btn.btn-default {
+    padding-left: 6px;
+    padding-right: 4px;    
+}
