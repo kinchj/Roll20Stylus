@@ -1,0 +1,21 @@
+/* SECTION BREAK SECTION BREAK */
+/* PLAYERS OPTIONS */
+/* SIDEBAR MENU - Hide Toolbar Buttons */
+#floatingtoolbar {
+		position: fixed;
+		top: 25px !important; 
+		left: 8px !important;
+} /* Move Toolbar Down */
+
+#fxtools {
+  display: none !important;
+}
+#zoompanel {
+  display: none !important;
+}
+#diceroller {
+  display: none !important;
+}
+#helpsite {
+  display: none !important;
+}
