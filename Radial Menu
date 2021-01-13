@@ -1,0 +1,339 @@
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* RADIAL MENU - Emojis */
+#radial-menu .button.button-3:after {
+    position: relative;
+    content: "❤️";
+    color: white;
+    font-size: 13px;
+    top: -40px;
+    left: -17px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 3px;
+    background-color: #000;
+}
+    #radial-menu .button.button-4:after {
+    position: relative;
+    content: "🛡️";
+    color: white;
+    font-size: 13px;
+    top: -40px;
+    left: -17px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 3px;
+    background-color: #000;
+}
+#radial-menu .button.button-5:after {
+    position: relative;
+    content: "👟";
+    color: white;
+    font-size: 13px;
+    top: -40px;
+    left: -17px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 3px;
+    background-color: #000;
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* RADIAL MENU - Move to Left side of Screen */
+/* 
+Button 1 is the Edit Token menu button
+Button 2 is the Status Marker menu button
+Button 3 is Bar 1 red HP
+        top: -25px;
+Button 4 is Bar 2 blue AC
+        top: 15px;
+Button 5 is Bar 3 green Speed
+        top: 55px;
+*/
+#radial-menu {
+        --color-text-primary: #b3b3b3;
+        --color-bg-dark: #1c1111;
+        --color-text-disabled: #150d0d;
+        --color-element-bg: #372828;
+        --color-red: #f85212;
+        --color-green: #78ff10;
+        --color-blue: #0c6be7;
+        --color-yellow: #fc0;
+        --font-number: "Ruda", sans-serif;
+}
+#radial-menu {
+		position: fixed;
+		top: 45px !important;
+		left: 5px !important;
+} /* Bar Buttons to left side */
+#radial-menu .button {
+        background: var(--color-element-bg) !important; 
+        border: 0px; 
+} /* Removes white outline from buttons */
+#radial-menu .button.button-1 {
+        border-radius: 25px 25px 25px 25px; /* Round Edit Token menu button */
+        display: none !important; /* Remove Edit Token menu button */
+}
+#radial-menu .button.button-2 {
+        border-radius: 25px 25px 25px 25px; 
+} /* Round Status Marker menu button */
+#radial-menu .button.button-1,
+#radial-menu .button.button-2 {
+        box-shadow: 0px 0px 5px var(--color-text-disabled);
+        left: 0px;
+} /* Shadow for Edit Token & Status Marker buttons */
+#radial-menu .button.button-1,
+#radial-menu .button.button-2 {
+        position:fixed;
+        left:5px !important;
+} /* Horizontal placement for Edit Token & Status Marker buttons */
+#radial-menu .button.button-2 {
+        top:123px;
+} /* Vertical placement for Status Marker button */
+#radial-menu .button.button-1 {
+        top: 218px;
+} /* Vertical placement for Edit Token button */
+#radial-menu .button.button-3,
+#radial-menu .button.button-4,
+#radial-menu .button.button-5 {
+        left: -45px; 
+} /* Horizontal placement for bar buttons */
+#radial-menu .button.button-3 {
+        box-shadow: 0px 0px 5px var(--color-text-disabled),
+            inset 0px 0px 5px var(--color-red),
+            inset 0px 0px 10px var(--color-red),
+            inset 0px 0px 15px var(--color-red) !important;
+        top: -25px;
+} /* Shadow for green bar button */
+#radial-menu .button.button-4 {
+        box-shadow: 0px 0px 5px var(--color-text-disabled),
+            inset 0px 0px 5px var(--color-blue),
+            inset 0px 0px 10px var(--color-blue),
+            inset 0px 0px 15px var(--color-blue) !important;
+        top: 15px;
+} /* Shadow for blue bar button */
+#radial-menu .button.button-5 {
+        box-shadow: 0px 0px 5px var(--color-text-disabled),
+            inset 0px 0px 5px var(--color-green),
+            inset 0px 0px 10px var(--color-green),
+            inset 0px 0px 15px var(--color-green) !important;
+        top: 55px;
+} /* Shadow for red bar button */
+#radial-menu .button.button-1 div.inner,
+#radial-menu .button.button-2 div.inner {
+        margin-top: 4px;
+} /* Vertical placement for Status Marker button shadow */
+#radial-menu .button div.inner span {
+        font-size: 18px !important;
+} /* Font size for buttons */
+#radial-menu .popupvalue {
+        position: absolute;
+        top: 5px;
+        left: 45px;
+        width: 55px;
+        height: 30px;
+        z-index: 1005
+}
+#radial-menu .popupvalue input {
+        width: 100%;
+        font-size: 16px
+}
+
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* RADIAL MENU - Status Icon Display Toggle */
+div[data-action-type=toggle_status_blue] { display: none !important; }
+div[data-action-type=toggle_status_red] { display: none !important; }
+div[data-action-type=toggle_status_green] { display: none !important; }
+div[data-action-type=toggle_status_brown] { display: none !important; }
+div[data-action-type=toggle_status_purple] { display: none !important; }
+div[data-action-type=toggle_status_pink] { display: none !important; }
+div[data-action-type=toggle_status_yellow] { display: none !important; }
+div[data-action-type=toggle_status_dead] { display: none !important; }
+div[data-action-type=toggle_status_skull] { display: none !important; }
+div[data-action-type=toggle_status_sleepy] { display: none !important; }
+div[data-action-type=toggle_status_half-heart] { display: none !important; }
+div[data-action-type=toggle_status_half-haze] { display: none !important; }
+div[data-action-type=toggle_status_interdiction] { display: none !important; }
+div[data-action-type=toggle_status_snail] { display: none !important; }
+div[data-action-type=toggle_status_lightning-helix] { display: none !important; }
+div[data-action-type=toggle_status_spanner] { display: none !important; }
+div[data-action-type=toggle_status_chained-heart] { display: none !important; }
+div[data-action-type=toggle_status_chemical-bolt] { display: none !important; }
+div[data-action-type=toggle_status_death-zone] { display: none !important; }
+div[data-action-type=toggle_status_drink-me] { display: none !important; }
+div[data-action-type=toggle_status_edge-crack] { display: none !important; }
+div[data-action-type=toggle_status_ninja-mask] { display: none !important; }
+div[data-action-type=toggle_status_stopwatch] { display: none !important; }
+div[data-action-type=toggle_status_fishing-net] { display: none !important; }
+div[data-action-type=toggle_status_overdrive] { display: none !important; }
+div[data-action-type=toggle_status_strong] { display: none !important; }
+div[data-action-type=toggle_status_fist] { display: none !important; }
+div[data-action-type=toggle_status_padlock] { display: none !important; }
+div[data-action-type=toggle_status_three-leaves] { display: none !important; }
+div[data-action-type=toggle_status_fluffy-wing] { display: none !important; }
+div[data-action-type=toggle_status_pummeled] { display: none !important; }
+div[data-action-type=toggle_status_tread] { display: none !important; }
+div[data-action-type=toggle_status_arrowed] { display: none !important; }
+div[data-action-type=toggle_status_aura] { display: none !important; }
+div[data-action-type=toggle_status_back-pain] { display: none !important; }
+div[data-action-type=toggle_status_black-flag] { display: none !important; }
+div[data-action-type=toggle_status_bleeding-eye] { display: none !important; }
+div[data-action-type=toggle_status_bolt-shield] { display: none !important; }
+div[data-action-type=toggle_status_broken-heart] { display: none !important; }
+div[data-action-type=toggle_status_cobweb] { display: none !important; }
+div[data-action-type=toggle_status_broken-shield] { display: none !important; }
+div[data-action-type=toggle_status_flying-flag] { display: none !important; }
+div[data-action-type=toggle_status_radioactive] { display: none !important; }
+div[data-action-type=toggle_status_trophy] { display: none !important; }
+div[data-action-type=toggle_status_broken-skull] { display: none !important; }
+div[data-action-type=toggle_status_frozen-orb] { display: none !important; }
+div[data-action-type=toggle_status_rolling-bomb] { display: none !important; }
+div[data-action-type=toggle_status_white-tower] { display: none !important; }
+div[data-action-type=toggle_status_grab] { display: none !important; }
+div[data-action-type=toggle_status_screaming] { display: none !important; }
+div[data-action-type=toggle_status_grenade] { display: none !important; }
+div[data-action-type=toggle_status_sentry-gun] { display: none !important; }
+div[data-action-type=toggle_status_all-for-one] { display: none !important; }
+div[data-action-type=toggle_status_angel-outfit] { display: none !important; }
+div[data-action-type=toggle_status_archery-target] { display: none !important; }
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* RADIAL MENU - Token Marker Labels */
+#radial-menu .markermenu.open {
+        width: 230px;
+        min-width: 230px;
+        min-height: 420px; 
+        border-radius: 15px;
+}
+/* Prevent the icons from taking up extra space, allow space for the label text */
+#radial-menu .markermenu.open .statusicon {
+    font-size:0;
+    margin-bottom: 1px;
+}
+#radial-menu .markermenu.open .statusicon,
+#radial-menu .markermenu .markericon{
+    height: 34px;
+    width: 34px;
+    background-size: 34px;
+}
+/* Undo the default dead "X" styling */
+#radial-menu .markermenu .markercolor.dead {
+    font-weight: normal;
+    height: 34px;
+    margin-left: 0;
+    padding: 0;
+    top: 0 !important;
+    width: 34px;
+}
+/* Show the icon titles as labels */
+#radial-menu .markermenu.open .statusicon::after {
+    color: black;
+    content: attr(title);
+    display: inline-block;
+    font-size: 9px;
+    line-height: 1em;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    top: 34px;
+    white-space: nowrap;
+    width: 34px;
+}
+/* Recreate the dead "X" without disrupting the layout */
+#radial-menu .markermenu .markercolor.dead::before {
+    content: "X";
+    display: block;
+    font-size: 34px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: 7px;
+    width: 100%;
+}
+.active[title="Concentrating"],
+.active[title="Held-Action"]{
+    		animation: blinkingGreenStatusMarker 1.5s infinite;
+    }
+	@keyframes blinkingGreenStatusMarker{
+		0%		{ color: #000; background-color: #c0000000; border: 3px solid #ff0; border-radius: 3px;}
+		25%		{ color: #0a0; background-color: #FFFF00; border: 3px solid #0a0; border-radius: 3px;}
+		50%		{ color: #0a0; background-color: #FFFF00; border: 3px solid #0a0; border-radius: 3px;} 
+		75%		{ color: #0a0; background-color: #FFFF00; border: 3px solid #0a0; border-radius: 3px;}
+		100%	{ color: #000; background-color: #c0000000; border: 3px solid #ff0; border-radius: 3px;}
+}        
+/*
+.active:not([title="Concentrating"]):not([title="Held-Action"]){
+    	animation: blinkingStatusMarkers 1.5s infinite;
+}
+	@keyframes blinkingStatusMarkers{
+		0%		{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}
+		25%		{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}
+		50%		{ outline: 2px solid #c0000000; outline-offset: -3px; border: 3px solid #c0000000; border-radius: 3px;}
+		75%		{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}
+		100%	{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}    
+}   
+*/
+.active[title="Blessed"],
+.active[title="Enlarged"],
+.active[title="Flying"],
+.active[title="Hasted"],
+.active[title="Heroism"],
+.active[title="Hidden"],
+.active[title="Inspiration"],
+.active[title="Invisible"],
+.active[title="Raging"],
+.active[title="Ritual"],
+.active[title="Sacred-Weapon"],
+.active[title="Shrunken"],
+.active[title="Stable"],
+.active[title="Warded"]{
+        	animation: blinkingBlueStatusMarkers 1.5s infinite;
+}
+	@keyframes blinkingBlueStatusMarkers{
+		0%		{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}
+		25%		{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}
+		50%		{ outline: 2px solid #c0000000; outline-offset: -3px; border: 3px solid #c0000000; border-radius: 3px;}
+		75%		{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}
+		100%	{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}    
+}   
+.active[title="Bane"],
+.active[title="Banished"],
+.active[title="Blind"],
+.active[title="Charmed"],
+.active[title="Confused"],
+.active[title="Cursed"],
+.active[title="Dead"],
+.active[title="Deafened"],
+.active[title="Drowning"],
+.active[title="Dying"],
+.active[title="Encumbered"],
+.active[title="Exhaustion"],
+.active[title="Frightened"],
+.active[title="Frozen"],
+.active[title="Grappled"],
+.active[title="Hexed"],
+.active[title="Incapacitated"],
+.active[title="Marked"],
+.active[title="On-Fire"],
+.active[title="Paralyzed"],
+.active[title="Petrified"],
+.active[title="Poisoned"],
+.active[title="Prone"],
+.active[title="Restrained"],
+.active[title="Silenced"],
+.active[title="Slowed"],
+.active[title="Stunned"],
+.active[title="Suffocating"],
+.active[title="Unconscious"]{
+        	animation: blinkingRedStatusMarkers 1.5s infinite;}
+	@keyframes blinkingRedStatusMarkers{
+		0%		{ outline: 2px solid red; outline-offset: -3px; border: 3px solid red; border-radius: 3px;}
+		25%		{ outline: 2px solid red; outline-offset: -3px; border: 3px solid red; border-radius: 3px;}
+		50%		{ outline: 2px solid #c0000000; outline-offset: -3px; border: 3px solid #c0000000; border-radius: 3px;}
+		75%		{ outline: 2px solid red; outline-offset: -3px; border: 3px solid red; border-radius: 3px;}
+		100%	{ outline: 2px solid red; outline-offset: -3px; border: 3px solid red; border-radius: 3px;}
+}   
