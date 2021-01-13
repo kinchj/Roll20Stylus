@@ -1,0 +1,1064 @@
+/* SECTION BREAK SECTION BREAK */
+/* INDIVIDUAL PLAYER OPTIONS */
+/* BLIND ROLL */
+#userscript-BlindRoll {
+    display:inline!important;
+}
+#userscript-brpw {
+    display:inline!important;
+}
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHARACTER SHEET - Core Page and Spell Sheet */
+/* CORE PAGE */
+/* Makes description of equipment legible and enlarges edit box */
+.charsheet .sheet-item .sheet-subitem .sheet-subtextarea {
+    line-height: 13px;
+    font-size: 11px;
+    height: 96px;
+}
+/*Tightens Features and Traits?*/
+.charsheet .sheet-col3 .sheet-textbox .sheet-display {
+    padding: 0px 0px 5px 10px;
+    margin-bottom: 0px !important;
+}
+/* makes edit and add buttons less obtrusive */
+.charsheet .repcontrol .repcontrol_add:before,
+.charsheet .repcontrol .repcontrol_edit:after {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #bbb;
+    padding: 0px;
+}
+/* SPELL PAGE */
+/* Enlarges the word Cantrips on Spell Sheet */
+.charsheet .sheet-cantrips span {
+    font-size: 14px;
+    line-height: 14px;
+}
+/*tightens list*/
+.charsheet .sheet-spell {
+    margin-bottom: 0px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    ;
+}
+/*Tightens space between spell levels*/
+.charsheet .sheet-spell-container {
+    min-height: 30px;
+}
+.charsheet .sheet-spell .sheet-display button[type=roll].sheet-spellcard {
+    width: min-content;
+        border-bottom: 0px solid #fff;
+}
+  .sheet-row,  .charsheet .sheet-3colrow  {
+    display: inline-block !important;
+    vertical-align:bottom !important;
+}
+.ui-dialog .charsheet .sheet-row .sheet-details{
+        display:block !important;
+}
+/* Fixes display of innate field*/
+.charsheet .sheet-spells .sheet-innate {
+    color: #666;
+    display:inline !important;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-left: -3px !important;
+}
+/* Gets rid of comma*/
+.charsheet .sheet-innate:before {
+    content: ", ";
+    color: #fff;
+}
+/* Changes Ritual tag to Green */
+.charsheet span.sheet-spellritual {
+    background-color: #019515;
+}
+/* Changes Concentration tag to Blue */
+.charsheet span.sheet-spellconcentration {
+    background-color: #015e95;
+}
+/* Fancy spell names*/
+.charsheet .sheet-spell .sheet-display span.sheet-spellname {
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    color: #7e2d40;
+    font-weight: bolder;
+    margin-right: 0px;
+}
+/* Changes Spell background to yellow in edit mode */
+.charsheet .sheet-spell .sheet-wrapper .sheet-options-flag:checked ~ .sheet-options {
+    display: inherit;
+    background-color: #f9f6ca;
+    padding: 5px;
+    margin: 10px 5px 10px 5px;
+}
+/* Changes Spell background to parchment in display mode */
+.charsheet .sheet-spell .sheet-details {
+    background-image: url('https://i.imgur.com/vjL1blE.jpg');
+    /*defaults to blue if image link is broken*/
+    background-color: #eafbff;
+    padding: 5px;
+    display: grid !important;
+    margin: 10px 5px 10px 5px;
+}
+/* Boldens spall name in display mode */
+.charsheet .sheet-spell .sheet-details span[name="attr_spellname"] {
+    font-weight: bolder;
+}
+/* TEMPORARY SECTION */
+/* START Remove these after sheet is fixed on death saves*/
+div.sheet-hdice-dsaves-container:nth-child(4) > div:nth-child(2) > button:nth-child(3) {
+    /* margin-top: 6px; */
+    margin-top: 0px !important;
+}
+div.sheet-row-container:nth-child(1) {
+    margin-top: 2px !important;
+}
+div.sheet-row-container:nth-child(2) {
+    margin-top: 2px !important;
+}
+.charsheet .sheet-hdice-dsaves-container input[type=number] {
+    padding-top: 0px !important;
+}
+.sheet-roll-hitdie > select:nth-child(3) {
+    font-size: 1px !important;
+    width: 25px !important;
+}
+.charsheet .sheet-subcontainer .sheet-roll-hitdie button[type=roll]{
+    margin-left: 15px;
+}
+/* END Remove these after sheet is fixed on death saves*/
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHARACTER SHEET - Tweaks for D&D 5e by Roll20 (OGL) sheet */
+/* CORE PAGE */
+/* Makes description of equipment legible and enlarges edit box */
+.charsheet .sheet-item .sheet-subitem .sheet-subtextarea {
+    line-height: 13px;
+    font-size: 11px;
+    height: 96px;
+}
+/*Tightens Features and Traits?*/
+.charsheet .sheet-col3 .sheet-textbox .sheet-display {
+    padding: 0px 0px 5px 10px;
+    margin-bottom: 0px !important;
+}
+/* makes edit and add buttons less obtrusive */
+.charsheet .repcontrol .repcontrol_add:before,
+.charsheet .repcontrol .repcontrol_edit:after {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #bbb;
+    padding: 0px;
+}
+/* SPELL PAGE */
+/* Enlarges the word Cantrips on Spell Sheet */
+.charsheet .sheet-cantrips span {
+    font-size: 14px;
+    line-height: 14px;
+}
+/*tightens list*/
+.charsheet .sheet-spell {
+    margin-bottom: 0px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+/*Tightens space between spell levels*/
+.charsheet .sheet-spell-container {
+    min-height: 30px;
+}
+.charsheet .sheet-spell .sheet-display button[type=roll].sheet-spellcard {
+    width: min-content;
+        border-bottom: 0px solid #fff;
+}
+  .sheet-row,  .charsheet .sheet-3colrow  {
+    display: inline-block !important;
+    vertical-align:bottom !important;
+}
+.ui-dialog .charsheet .sheet-row .sheet-details{
+        display:block !important;
+}
+/* Fixes display of innate field*/
+.charsheet .sheet-spells .sheet-innate {
+    color: #666;
+    display:inline !important;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-left: -3px !important;
+}
+/* Gets rid of comma*/
+.charsheet .sheet-innate:before {
+    content: ", ";
+    color: #fff;
+}
+/* Changes Ritual tag to Green */
+.charsheet span.sheet-spellritual {
+    background-color: #019515;
+}
+/* Changes Concentration tag to Blue */
+.charsheet span.sheet-spellconcentration {
+    background-color: #015e95;
+}
+/* Fancy spell names*/
+.charsheet .sheet-spell .sheet-display span.sheet-spellname {
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    color: #7e2d40;
+    font-weight: bolder;
+    margin-right: 0px;
+
+}
+/* Changes Spell background to yellow in edit mode */
+.charsheet .sheet-spell .sheet-wrapper .sheet-options-flag:checked ~ .sheet-options {
+    display: inherit;
+    background-color: #f9f6ca;
+    padding: 5px;
+    margin: 10px 5px 10px 5px;
+}
+/* Changes Spell background to parchment in display mode */
+.charsheet .sheet-spell .sheet-details {
+    background-image: url('https://i.imgur.com/vjL1blE.jpg');
+    /*defaults to blue if image link is broken*/
+    background-color: #eafbff;
+    padding: 5px;
+    display: grid !important;
+    margin: 10px 5px 10px 5px;
+}
+/* Boldens spall name in display mode */
+.charsheet .sheet-spell .sheet-details span[name="attr_spellname"] {
+    font-weight: bolder;
+}
+/* TEMPORARY SECTION */
+/* START Remove these after sheet is fixed on death saves*/
+div.sheet-hdice-dsaves-container:nth-child(4) > div:nth-child(2) > button:nth-child(3) {
+    /* margin-top: 6px; */
+    margin-top: 0px !important;
+}
+div.sheet-row-container:nth-child(1) {
+    margin-top: 2px !important;
+}
+div.sheet-row-container:nth-child(2) {
+    margin-top: 2px !important;
+}
+.charsheet .sheet-hdice-dsaves-container input[type=number] {
+    padding-top: 0px !important;
+}
+.sheet-roll-hitdie > select:nth-child(3) {
+    font-size: 1px !important;
+    width: 25px !important;
+}
+.charsheet .sheet-subcontainer .sheet-roll-hitdie button[type=roll]{
+    margin-left: 15px;
+}
+/* END Remove these after sheet is fixed on death saves*/
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHARACTER VAULT - Neater Character Vault */
+.vaultchar {
+    border: 1px solid #aaa;
+    margin-top: 1em;
+    background: #eee;
+    border-radius: 5px;
+    padding: 0.5em;
+    height: 385px;
+    text-overflow: clip;
+}
+.vaultchar p.char-name {
+    font-size: 20px;
+    background: #666;
+    border-radius: 4px;
+    padding: 0em 0.5em 0em;
+    color: #fff
+}
+.char-info {
+    height: 270px;
+    text-overflow: clip;
+    margin-top: 5px;
+}
+.char-images {
+    height: 270px;
+    margin-top: 5px;
+}
+.char-bio {
+    text-overflow: clip;
+    overflow: scroll;
+}
+.charmenu p {
+    font-size: 12px;
+}
+.char-tools .btn:not(.btn-primary) {
+    padding: 0em;
+}
+label.choose {
+    line-height: 1.8;
+    margin-bottom: 0px;
+    padding: 0em;
+}
+.char-tools .btn {
+    padding: 0em;
+}
+.char-avatar img,
+.char-token img {
+    overflow: scroll;
+    max-height: 100px;
+}
+.char-avatar,
+.char-token {
+    font-size: 12px;
+    padding: 0em;
+    margin: .25em 1em 0em;
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHAT BAR - Concentration */
+span[data-i18n="concentration"] {
+    		animation: blinkingText 1.5s infinite;
+            border: 1px solid #000;
+            font-weight: bolder;
+            margin: 0px 1px 0px 1px;
+            padding: 0px 2px 0px 2px;
+    }
+	@keyframes blinkingText{
+		0%		{ color: #000; background-color: #c0000000; border: 1px solid #000;}
+		25%		{ color: #F00; background-color: #FFFF00; border: 1px solid #F00;}
+		50%		{ color: #F00; background-color: #FFFF00; border: 1px solid #F00;} 
+		75%		{ color: #F00; background-color: #FFFF00; border: 1px solid #F00;}
+		100%	{ color: #000; background-color: #c0000000; border: 1px solid #000;}
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHAT BAR - Inline Links on OGL Roll Templates */
+.textchatcontainer a[href] {
+    background-color: transparent;
+    padding: 0px;
+    color: #ce0f69;
+    display: inline-block;
+    border: none;
+}
+.sheet-rolltemplate-npc, .sheet-rolltemplate-npcaction .sheet-container, .sheet-rolltemplate-npcatk, .sheet-rolltemplate-npcdmg, .sheet-rolltemplate-traits {
+    width: 95%;
+    border: 1px solid;
+    background-color: #ffffff;
+    padding: 5px;
+}
+/*
+    color: #ce0f69;
+*/
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHAT BAR - Invalid Repeating Actions */
+.textchatcontainer a[href*="$selected"] {
+    color: #fff0;
+    font-size: 1px;
+}
+/* 
+    Roll20, Chat, hide errors
+    This hides all error messages in Chat.
+    It's useful if you have a macro that lists 3 repeating_weapons or spells,
+    but the character has only 2.
+*/
+div.message.error {
+    display: none !important;
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* INDIVIDUAL PLAYER OPTIONS */
+/* CHAT BAR - Speaking As */
+/*
+Kilrakas
+character\|-M7YiSUD9rhnHKmKmBnY
+Aladoc
+character\|-M7Yi0tFL482VJrJBblW
+Bettin
+character\|-M7Yi3hBPf_U-VYId7q0
+Phrenzi
+character\|-M7YiVxk1Hz1ebQYkDhh
+Pyewacket
+character|-MDhk6am-UtEaBEH_M9u
+Tethyr
+character\|-M7YiXjwmM2ztpWWzsj7
+*/
+#speakingas option:not([value=character\|-KHIA-W9OoZp9eE6UdWy]):not([value=player\|-M4MqKQpTCRs8I6I65Rh]):not([value=character\|-M7YiSUD9rhnHKmKmBnY]):not([value=character\|-M7Yi0tFL482VJrJBblW]):not([value=character\|-M7Yi3hBPf_U-VYId7q0]):not([value=character\|-M7YiVxk1Hz1ebQYkDhh]):not([value=character\|-M7YiXjwmM2ztpWWzsj7]):not([value=character\|-MDhk6am-UtEaBEH_M9u]){
+    display: none;
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHAT BAR - Talk To Yourself Banner */
+#textchat-notifier
+  {
+    position: relative;
+      width:92%;
+    top: 0px;
+      text-align: center;
+    background-color: rgb(162, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 1px 5px;
+    font-size: .7em;
+    line-height: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid hsl(45, 70%, 81%);
+    border-top: 0;
+    box-shadow: 1px 2px 5px rgba(101, 77, 121, 0.25);
+  }
+
+
+/* SECTION BREAK SECTION BREAK */
+/* PLAYERS OPTIONS */
+/* GM TOGGLE OPTIONS */
+/* CHAT MENU - Hide Menu Controls */
+#arttab {
+  display: none !important;
+}
+#jukeboxtab {
+  display: none !important;
+}
+[title~=Compendium] {
+  display: none !important;
+}
+[title~=Collection] {
+  display: none !important;
+}
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHAT MENU - Tighter Sidebar Lists */
+.dd-list .journalitem .name, .dd-list .library-item .name {
+    top: 0px;
+}
+.dd-list .journalitem .token, .dd-list .library-item .token {
+    top: 0px;
+}
+.dd-item  .folder-title {
+        background-color: #eee !important;
+    }
+.dd-content {
+    padding: 0px;
+}
+#compendium .searchroot .dd-item .dd-content .token img {
+    padding: 0px;
+    max-width: 19px;
+    max-height: 19px;
+}
+#compendium .searchroot .dd-item .dd-content .token {
+    top: 0px;
+}
+#compendium .searchroot .dd-item .dd-content .sourcefooter {
+    width: 18px;
+       height: 18px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-size: 6px;
+}
+.expandcontroller {
+    position: relative;
+    bottom:10px;
+}
+#compendium .searchroot .dd-item .dd-content .sourcefooter {
+    font-size: 12px;
+}
+.inapp .sourcefooter,.inapp.expansion3 .sourcefooter, .inapp.expansion9 .sourcefooter, .inapp.expansion13 .sourcefooter, .inapp.expansion16 .sourcefooter {
+    background-size: 15px 10px;
+    background-image:none;
+    padding-top: 5px;
+    top: 0px !important;
+}
+.dd-item, .dd-empty, .dd-placeholder {
+    min-height: 21px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.dd-list .handout img, .dd-list .archivetable img, .dd-list .journalitem img, .dd-list .library-item img{
+    max-width: 20px;
+    max-height: 20px;
+}
+.dd-item>button {
+    height: 16px;
+    margin: 0px;
+    font-size: 14px;
+    top: 0px;
+}
+.dd-handle {
+    top: 0px;
+    width: 20px;
+    padding: 0px 10px;
+}
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* MACRO BAR - Thinner Macrobar */
+#macrobar .macrobox {
+    margin-right: 7px
+}
+#macrobar div.macrobox:hover {
+    padding-right: 7px;
+    margin-right: 0px;  
+}
+.macrobox .btn, .macrobox .btn.btn-default {
+    padding-left: 6px;
+    padding-right: 4px;    
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* PAGE TAB - Zoom Slider Tweaks */
+/*
+#zoomclick {
+  display: none !important;
+}
+*/
+.zoomValue {
+    display: block;
+    font-size: 12px;
+    font-family:"arial black";
+    background-color: #22222247;
+    padding: 0px;
+    position: fixed;
+	top: 5px !important;
+	left: 5px !important;
+}
+.zoomplus, .zoomminus {
+  display: none !important;
+    font-size: 7px;
+}
+#zoomclick .btn {
+  display: none !important;
+}
+#zoomslider {
+    display: none !important;
+}
+#zoomslider a.ui-slider-handle.ui-state-default.ui-corner-all {
+  display: none !important;
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* RADIAL MENU - Emojis */
+#radial-menu .button.button-3:after {
+    position: relative;
+    content: "❤️";
+    color: white;
+    font-size: 13px;
+    top: -40px;
+    left: -17px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 3px;
+    background-color: #000;
+}
+    #radial-menu .button.button-4:after {
+    position: relative;
+    content: "🛡️";
+    color: white;
+    font-size: 13px;
+    top: -40px;
+    left: -17px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 3px;
+    background-color: #000;
+}
+#radial-menu .button.button-5:after {
+    position: relative;
+    content: "👟";
+    color: white;
+    font-size: 13px;
+    top: -40px;
+    left: -17px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 3px;
+    background-color: #000;
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* RADIAL MENU - Move to Left side of Screen */
+/* 
+Button 1 is the Edit Token menu button
+Button 2 is the Status Marker menu button
+Button 3 is Bar 1 red HP
+        top: -25px;
+Button 4 is Bar 2 blue AC
+        top: 15px;
+Button 5 is Bar 3 green Speed
+        top: 55px;
+*/
+#radial-menu {
+        --color-text-primary: #b3b3b3;
+        --color-bg-dark: #1c1111;
+        --color-text-disabled: #150d0d;
+        --color-element-bg: #372828;
+        --color-red: #f85212;
+        --color-green: #78ff10;
+        --color-blue: #0c6be7;
+        --color-yellow: #fc0;
+        --font-number: "Ruda", sans-serif;
+}
+#radial-menu {
+		position: fixed;
+		top: 45px !important;
+		left: 5px !important;
+} /* Bar Buttons to left side */
+#radial-menu .button {
+        background: var(--color-element-bg) !important; 
+        border: 0px; 
+} /* Removes white outline from buttons */
+#radial-menu .button.button-1 {
+        border-radius: 25px 25px 25px 25px; /* Round Edit Token menu button */
+        display: none !important; /* Remove Edit Token menu button */
+}
+#radial-menu .button.button-2 {
+        border-radius: 25px 25px 25px 25px; 
+} /* Round Status Marker menu button */
+#radial-menu .button.button-1,
+#radial-menu .button.button-2 {
+        box-shadow: 0px 0px 5px var(--color-text-disabled);
+        left: 0px;
+} /* Shadow for Edit Token & Status Marker buttons */
+#radial-menu .button.button-1,
+#radial-menu .button.button-2 {
+        position:fixed;
+        left:5px !important;
+} /* Horizontal placement for Edit Token & Status Marker buttons */
+#radial-menu .button.button-2 {
+        top:123px;
+} /* Vertical placement for Status Marker button */
+#radial-menu .button.button-1 {
+        top: 218px;
+} /* Vertical placement for Edit Token button */
+#radial-menu .button.button-3,
+#radial-menu .button.button-4,
+#radial-menu .button.button-5 {
+        left: -45px; 
+} /* Horizontal placement for bar buttons */
+#radial-menu .button.button-3 {
+        box-shadow: 0px 0px 5px var(--color-text-disabled),
+            inset 0px 0px 5px var(--color-red),
+            inset 0px 0px 10px var(--color-red),
+            inset 0px 0px 15px var(--color-red) !important;
+        top: -25px;
+} /* Shadow for green bar button */
+#radial-menu .button.button-4 {
+        box-shadow: 0px 0px 5px var(--color-text-disabled),
+            inset 0px 0px 5px var(--color-blue),
+            inset 0px 0px 10px var(--color-blue),
+            inset 0px 0px 15px var(--color-blue) !important;
+        top: 15px;
+} /* Shadow for blue bar button */
+#radial-menu .button.button-5 {
+        box-shadow: 0px 0px 5px var(--color-text-disabled),
+            inset 0px 0px 5px var(--color-green),
+            inset 0px 0px 10px var(--color-green),
+            inset 0px 0px 15px var(--color-green) !important;
+        top: 55px;
+} /* Shadow for red bar button */
+#radial-menu .button.button-1 div.inner,
+#radial-menu .button.button-2 div.inner {
+        margin-top: 4px;
+} /* Vertical placement for Status Marker button shadow */
+#radial-menu .button div.inner span {
+        font-size: 18px !important;
+} /* Font size for buttons */
+#radial-menu .popupvalue {
+        position: absolute;
+        top: 5px;
+        left: 45px;
+        width: 55px;
+        height: 30px;
+        z-index: 1005
+}
+#radial-menu .popupvalue input {
+        width: 100%;
+        font-size: 16px
+}
+
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* RADIAL MENU - Status Icon Display Toggle */
+div[data-action-type=toggle_status_blue] { display: none !important; }
+div[data-action-type=toggle_status_red] { display: none !important; }
+div[data-action-type=toggle_status_green] { display: none !important; }
+div[data-action-type=toggle_status_brown] { display: none !important; }
+div[data-action-type=toggle_status_purple] { display: none !important; }
+div[data-action-type=toggle_status_pink] { display: none !important; }
+div[data-action-type=toggle_status_yellow] { display: none !important; }
+div[data-action-type=toggle_status_dead] { display: none !important; }
+div[data-action-type=toggle_status_skull] { display: none !important; }
+div[data-action-type=toggle_status_sleepy] { display: none !important; }
+div[data-action-type=toggle_status_half-heart] { display: none !important; }
+div[data-action-type=toggle_status_half-haze] { display: none !important; }
+div[data-action-type=toggle_status_interdiction] { display: none !important; }
+div[data-action-type=toggle_status_snail] { display: none !important; }
+div[data-action-type=toggle_status_lightning-helix] { display: none !important; }
+div[data-action-type=toggle_status_spanner] { display: none !important; }
+div[data-action-type=toggle_status_chained-heart] { display: none !important; }
+div[data-action-type=toggle_status_chemical-bolt] { display: none !important; }
+div[data-action-type=toggle_status_death-zone] { display: none !important; }
+div[data-action-type=toggle_status_drink-me] { display: none !important; }
+div[data-action-type=toggle_status_edge-crack] { display: none !important; }
+div[data-action-type=toggle_status_ninja-mask] { display: none !important; }
+div[data-action-type=toggle_status_stopwatch] { display: none !important; }
+div[data-action-type=toggle_status_fishing-net] { display: none !important; }
+div[data-action-type=toggle_status_overdrive] { display: none !important; }
+div[data-action-type=toggle_status_strong] { display: none !important; }
+div[data-action-type=toggle_status_fist] { display: none !important; }
+div[data-action-type=toggle_status_padlock] { display: none !important; }
+div[data-action-type=toggle_status_three-leaves] { display: none !important; }
+div[data-action-type=toggle_status_fluffy-wing] { display: none !important; }
+div[data-action-type=toggle_status_pummeled] { display: none !important; }
+div[data-action-type=toggle_status_tread] { display: none !important; }
+div[data-action-type=toggle_status_arrowed] { display: none !important; }
+div[data-action-type=toggle_status_aura] { display: none !important; }
+div[data-action-type=toggle_status_back-pain] { display: none !important; }
+div[data-action-type=toggle_status_black-flag] { display: none !important; }
+div[data-action-type=toggle_status_bleeding-eye] { display: none !important; }
+div[data-action-type=toggle_status_bolt-shield] { display: none !important; }
+div[data-action-type=toggle_status_broken-heart] { display: none !important; }
+div[data-action-type=toggle_status_cobweb] { display: none !important; }
+div[data-action-type=toggle_status_broken-shield] { display: none !important; }
+div[data-action-type=toggle_status_flying-flag] { display: none !important; }
+div[data-action-type=toggle_status_radioactive] { display: none !important; }
+div[data-action-type=toggle_status_trophy] { display: none !important; }
+div[data-action-type=toggle_status_broken-skull] { display: none !important; }
+div[data-action-type=toggle_status_frozen-orb] { display: none !important; }
+div[data-action-type=toggle_status_rolling-bomb] { display: none !important; }
+div[data-action-type=toggle_status_white-tower] { display: none !important; }
+div[data-action-type=toggle_status_grab] { display: none !important; }
+div[data-action-type=toggle_status_screaming] { display: none !important; }
+div[data-action-type=toggle_status_grenade] { display: none !important; }
+div[data-action-type=toggle_status_sentry-gun] { display: none !important; }
+div[data-action-type=toggle_status_all-for-one] { display: none !important; }
+div[data-action-type=toggle_status_angel-outfit] { display: none !important; }
+div[data-action-type=toggle_status_archery-target] { display: none !important; }
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* RADIAL MENU - Token Marker Labels */
+#radial-menu .markermenu.open {
+        width: 230px;
+        min-width: 230px;
+        min-height: 420px; 
+        border-radius: 15px;
+}
+/* Prevent the icons from taking up extra space, allow space for the label text */
+#radial-menu .markermenu.open .statusicon {
+    font-size:0;
+    margin-bottom: 1px;
+}
+#radial-menu .markermenu.open .statusicon,
+#radial-menu .markermenu .markericon{
+    height: 34px;
+    width: 34px;
+    background-size: 34px;
+}
+/* Undo the default dead "X" styling */
+#radial-menu .markermenu .markercolor.dead {
+    font-weight: normal;
+    height: 34px;
+    margin-left: 0;
+    padding: 0;
+    top: 0 !important;
+    width: 34px;
+}
+/* Show the icon titles as labels */
+#radial-menu .markermenu.open .statusicon::after {
+    color: black;
+    content: attr(title);
+    display: inline-block;
+    font-size: 9px;
+    line-height: 1em;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    top: 34px;
+    white-space: nowrap;
+    width: 34px;
+}
+/* Recreate the dead "X" without disrupting the layout */
+#radial-menu .markermenu .markercolor.dead::before {
+    content: "X";
+    display: block;
+    font-size: 34px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: 7px;
+    width: 100%;
+}
+.active[title="Concentrating"],
+.active[title="Held-Action"]{
+    		animation: blinkingGreenStatusMarker 1.5s infinite;
+    }
+	@keyframes blinkingGreenStatusMarker{
+		0%		{ color: #000; background-color: #c0000000; border: 3px solid #ff0; border-radius: 3px;}
+		25%		{ color: #0a0; background-color: #FFFF00; border: 3px solid #0a0; border-radius: 3px;}
+		50%		{ color: #0a0; background-color: #FFFF00; border: 3px solid #0a0; border-radius: 3px;} 
+		75%		{ color: #0a0; background-color: #FFFF00; border: 3px solid #0a0; border-radius: 3px;}
+		100%	{ color: #000; background-color: #c0000000; border: 3px solid #ff0; border-radius: 3px;}
+}        
+/*
+.active:not([title="Concentrating"]):not([title="Held-Action"]){
+    	animation: blinkingStatusMarkers 1.5s infinite;
+}
+	@keyframes blinkingStatusMarkers{
+		0%		{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}
+		25%		{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}
+		50%		{ outline: 2px solid #c0000000; outline-offset: -3px; border: 3px solid #c0000000; border-radius: 3px;}
+		75%		{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}
+		100%	{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}    
+}   
+*/
+.active[title="Blessed"],
+.active[title="Enlarged"],
+.active[title="Flying"],
+.active[title="Hasted"],
+.active[title="Heroism"],
+.active[title="Hidden"],
+.active[title="Inspiration"],
+.active[title="Invisible"],
+.active[title="Raging"],
+.active[title="Ritual"],
+.active[title="Sacred-Weapon"],
+.active[title="Shrunken"],
+.active[title="Stable"],
+.active[title="Warded"]{
+        	animation: blinkingBlueStatusMarkers 1.5s infinite;
+}
+	@keyframes blinkingBlueStatusMarkers{
+		0%		{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}
+		25%		{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}
+		50%		{ outline: 2px solid #c0000000; outline-offset: -3px; border: 3px solid #c0000000; border-radius: 3px;}
+		75%		{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}
+		100%	{ outline: 2px solid blue; outline-offset: -3px; border: 3px solid blue; border-radius: 3px;}    
+}   
+.active[title="Bane"],
+.active[title="Banished"],
+.active[title="Blind"],
+.active[title="Charmed"],
+.active[title="Confused"],
+.active[title="Cursed"],
+.active[title="Dead"],
+.active[title="Deafened"],
+.active[title="Drowning"],
+.active[title="Dying"],
+.active[title="Encumbered"],
+.active[title="Exhaustion"],
+.active[title="Frightened"],
+.active[title="Frozen"],
+.active[title="Grappled"],
+.active[title="Hexed"],
+.active[title="Incapacitated"],
+.active[title="Marked"],
+.active[title="On-Fire"],
+.active[title="Paralyzed"],
+.active[title="Petrified"],
+.active[title="Poisoned"],
+.active[title="Prone"],
+.active[title="Restrained"],
+.active[title="Silenced"],
+.active[title="Slowed"],
+.active[title="Stunned"],
+.active[title="Suffocating"],
+.active[title="Unconscious"]{
+        	animation: blinkingRedStatusMarkers 1.5s infinite;}
+	@keyframes blinkingRedStatusMarkers{
+		0%		{ outline: 2px solid red; outline-offset: -3px; border: 3px solid red; border-radius: 3px;}
+		25%		{ outline: 2px solid red; outline-offset: -3px; border: 3px solid red; border-radius: 3px;}
+		50%		{ outline: 2px solid #c0000000; outline-offset: -3px; border: 3px solid #c0000000; border-radius: 3px;}
+		75%		{ outline: 2px solid red; outline-offset: -3px; border: 3px solid red; border-radius: 3px;}
+		100%	{ outline: 2px solid red; outline-offset: -3px; border: 3px solid red; border-radius: 3px;}
+}   
+
+
+/* SECTION BREAK SECTION BREAK */
+/* PLAYERS OPTIONS */
+/* SIDEBAR MENU - Hide Toolbar Buttons */
+#floatingtoolbar {
+		position: fixed;
+		top: 25px !important; 
+		left: 8px !important;
+} /* Move Toolbar Down */
+
+#fxtools {
+  display: none !important;
+}
+#zoompanel {
+  display: none !important;
+}
+#diceroller {
+  display: none !important;
+}
+#helpsite {
+  display: none !important;
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* TOKEN BAR - Color Token Action Buttons */
+.btn[data-macroid="-M4MqKQpTCRs8I6I65Rh|-M84RmvHP_7CfVnFDBd0"] {
+    color:#FFFFFF !important;
+    background-color:#077707 !important;
+    background-image:none !important;
+} /* ⏱️ */
+/*
+.btn[data-macroid="-M7YiSUD9rhnHKmKmBnY|-MPAeXEmqQQhba9Qh2Gu"] {
+    color:#FFFFFF !important;
+    background-color:#000000 !important; 
+    background-image:none !important;
+} /* 🎯 */
+.btn[data-macroid="-M4MqKQpTCRs8I6I65Rh|-MAkr8ayaP4_1H9k9mQm"] {
+    color:#FFFFFF !important;
+    background-color:#773311 !important;
+    background-image:none !important;
+} /* 🎲  */
+/*
+.btn[data-macroid="-M7YiSUD9rhnHKmKmBnY|-MPAeXEjQdv3CvUqQegQ"] {
+    color:#FFFFFF !important;
+    background-color:#000000 !important; 
+    background-image:none !important;
+} /* 💬 */
+/*
+.btn[data-macroid="-M7YiSUD9rhnHKmKmBnY|-MQTwErunl5xb0M1YtxF"] {
+    color:#FFFFFF !important;
+    background-color:#000000 !important; 
+    background-image:none !important;
+} /* 📅 */
+.btn[data-macroid="-M4MqKQpTCRs8I6I65Rh|-MAkfUS5RjrBvImGOgy_"] {
+    color:#000000 !important;
+    background-color:#000000 !important;
+    background-image:none !important;
+} /* 📋  */
+.btn[data-macroid="-M4MqKQpTCRs8I6I65Rh|-MC7t6PSLWlJrBbH_-tT"] {
+    color:#FFFFFF !important;
+    background-color:#DD0000 !important;
+    background-image:none !important;
+} /* 🔚 */
+.btn[data-macroid="-M4MqKQpTCRs8I6I65Rh|-MQLGNh4_efiWuFXfi1F"] {
+    color:#000000 !important;
+    background-color:#39D !important;
+    background-image:none !important;
+} /* 🚪 */
+/*
+.btn[data-macroid="-M7YiSUD9rhnHKmKmBnY|-MPAeXEkulSrXdpZwW0I"] {
+    color:#FFFFFF !important;
+    background-color:#000000 !important; 
+    background-image:none !important;
+} /* 🤫 */
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* TOKEN BAR - Compact Token Action ToolBar */
+#secondary-toolbar {
+    position: fixed;
+	top: 165px !important; 
+	left: 8px !important;
+    width: 32px;
+    box-shadow: none;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.44) !important;
+}
+#secondary-toolbar .tokenactions .btn, .btn.btn-default {
+    display: flex;
+    align-items: center;
+    padding: 0px 3px 0px 3px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    margin-right: 1px;
+}
+#secondary-toolbar li {
+    border-right: 0px;
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* TURN TRACKER - Tiny Tracker */
+#initiativewindow {
+    padding: 1px 1px;
+    overflow-x: auto
+}
+#initiativewindow ul li {
+    padding: 1px;
+}
+#initiativewindow ul li {
+    min-height: 15px
+}
+#initiativewindow ul li img {
+    max-width: 20px;
+    max-height: 18px;
+}
+#initiativewindow ul li span.initiative {
+    font-size: 18px;
+    padding: 1px;
+    min-height: 12px
+}
+#initiativewindow ul li span.name {
+    font-size: 14px;
+    padding-top: 1px
+}
+#initiativewindow input {
+    font-size: 12px;
+    height: 12px;
+}
+.ui-dialog-titlebar {
+    padding: 1px 5px;
+    font-size: 8px;
+}
+.ui-dialog .ui-dialog-title {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 1px
+}
+.ui-dialog .ui-dialog-titlebar-close {
+    top: 50%;
+    width: 19px;
+    margin: -10px 0 0 0;
+    padding: 1px;
+    height: 6px;
+    font-size: 7px;
+    line-height: 7.5px;
+}
+.ui-dialog .ui-dialog-titlebar-close span {
+    display: block;
+    margin: 1px;
+    text-indent: 9999px
+}
+.ui-dialog .ui-dialog-buttonpane {
+    border-width: 1px 0 0 0;
+    margin: .05em 0 0 0;
+    background-color: #f5f5f5;
+    padding: 1px 10px 1px;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+    margin: .05em .04em .05em 0;
+}
