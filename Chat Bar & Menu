@@ -1,0 +1,184 @@
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHAT BAR - Concentration */
+span[data-i18n="concentration"] {
+    		animation: blinkingText 1.5s infinite;
+            border: 1px solid #000;
+            font-weight: bolder;
+            margin: 0px 1px 0px 1px;
+            padding: 0px 2px 0px 2px;
+    }
+	@keyframes blinkingText{
+		0%		{ color: #000; background-color: #c0000000; border: 1px solid #000;}
+		25%		{ color: #F00; background-color: #FFFF00; border: 1px solid #F00;}
+		50%		{ color: #F00; background-color: #FFFF00; border: 1px solid #F00;} 
+		75%		{ color: #F00; background-color: #FFFF00; border: 1px solid #F00;}
+		100%	{ color: #000; background-color: #c0000000; border: 1px solid #000;}
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHAT BAR - Inline Links on OGL Roll Templates */
+.textchatcontainer a[href] {
+    background-color: transparent;
+    padding: 0px;
+    color: #ce0f69;
+    display: inline-block;
+    border: none;
+}
+.sheet-rolltemplate-npc, .sheet-rolltemplate-npcaction .sheet-container, .sheet-rolltemplate-npcatk, .sheet-rolltemplate-npcdmg, .sheet-rolltemplate-traits {
+    width: 95%;
+    border: 1px solid;
+    background-color: #ffffff;
+    padding: 5px;
+}
+/*
+    color: #ce0f69;
+*/
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHAT BAR - Invalid Repeating Actions */
+.textchatcontainer a[href*="$selected"] {
+    color: #fff0;
+    font-size: 1px;
+}
+/* 
+    Roll20, Chat, hide errors
+    This hides all error messages in Chat.
+    It's useful if you have a macro that lists 3 repeating_weapons or spells,
+    but the character has only 2.
+*/
+div.message.error {
+    display: none !important;
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* INDIVIDUAL PLAYER OPTIONS */
+/* CHAT BAR - Speaking As */
+/*
+Kilrakas
+character\|-M7YiSUD9rhnHKmKmBnY
+Aladoc
+character\|-M7Yi0tFL482VJrJBblW
+Bettin
+character\|-M7Yi3hBPf_U-VYId7q0
+Phrenzi
+character\|-M7YiVxk1Hz1ebQYkDhh
+Pyewacket
+character|-MDhk6am-UtEaBEH_M9u
+Tethyr
+character\|-M7YiXjwmM2ztpWWzsj7
+*/
+#speakingas option:not([value=character\|-KHIA-W9OoZp9eE6UdWy]):not([value=player\|-M4MqKQpTCRs8I6I65Rh]):not([value=character\|-M7YiSUD9rhnHKmKmBnY]):not([value=character\|-M7Yi0tFL482VJrJBblW]):not([value=character\|-M7Yi3hBPf_U-VYId7q0]):not([value=character\|-M7YiVxk1Hz1ebQYkDhh]):not([value=character\|-M7YiXjwmM2ztpWWzsj7]):not([value=character\|-MDhk6am-UtEaBEH_M9u]){
+    display: none;
+}
+
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHAT BAR - Talk To Yourself Banner */
+#textchat-notifier
+  {
+    position: relative;
+      width:92%;
+    top: 0px;
+      text-align: center;
+    background-color: rgb(162, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 1px 5px;
+    font-size: .7em;
+    line-height: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid hsl(45, 70%, 81%);
+    border-top: 0;
+    box-shadow: 1px 2px 5px rgba(101, 77, 121, 0.25);
+  }
+
+
+/* SECTION BREAK SECTION BREAK */
+/* PLAYERS OPTIONS */
+/* GM TOGGLE OPTIONS */
+/* CHAT MENU - Hide Menu Controls */
+#arttab {
+  display: none !important;
+}
+#jukeboxtab {
+  display: none !important;
+}
+[title~=Compendium] {
+  display: none !important;
+}
+[title~=Collection] {
+  display: none !important;
+}
+
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* CHAT MENU - Tighter Sidebar Lists */
+.dd-list .journalitem .name, .dd-list .library-item .name {
+    top: 0px;
+}
+.dd-list .journalitem .token, .dd-list .library-item .token {
+    top: 0px;
+}
+.dd-item  .folder-title {
+        background-color: #eee !important;
+    }
+.dd-content {
+    padding: 0px;
+}
+#compendium .searchroot .dd-item .dd-content .token img {
+    padding: 0px;
+    max-width: 19px;
+    max-height: 19px;
+}
+#compendium .searchroot .dd-item .dd-content .token {
+    top: 0px;
+}
+#compendium .searchroot .dd-item .dd-content .sourcefooter {
+    width: 18px;
+       height: 18px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-size: 6px;
+}
+.expandcontroller {
+    position: relative;
+    bottom:10px;
+}
+#compendium .searchroot .dd-item .dd-content .sourcefooter {
+    font-size: 12px;
+}
+.inapp .sourcefooter,.inapp.expansion3 .sourcefooter, .inapp.expansion9 .sourcefooter, .inapp.expansion13 .sourcefooter, .inapp.expansion16 .sourcefooter {
+    background-size: 15px 10px;
+    background-image:none;
+    padding-top: 5px;
+    top: 0px !important;
+}
+.dd-item, .dd-empty, .dd-placeholder {
+    min-height: 21px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.dd-list .handout img, .dd-list .archivetable img, .dd-list .journalitem img, .dd-list .library-item img{
+    max-width: 20px;
+    max-height: 20px;
+}
+.dd-item>button {
+    height: 16px;
+    margin: 0px;
+    font-size: 14px;
+    top: 0px;
+}
+.dd-handle {
+    top: 0px;
+    width: 20px;
+    padding: 0px 10px;
+}
