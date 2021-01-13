@@ -1,0 +1,31 @@
+/* SECTION BREAK SECTION BREAK */
+/* ALL PLAYERS OPTIONS */
+/* PAGE TAB - Zoom Slider Tweaks */
+/*
+#zoomclick {
+  display: none !important;
+}
+*/
+.zoomValue {
+    display: block;
+    font-size: 12px;
+    font-family:"arial black";
+    background-color: #22222247;
+    padding: 0px;
+    position: fixed;
+	top: 5px !important;
+	left: 5px !important;
+}
+.zoomplus, .zoomminus {
+  display: none !important;
+    font-size: 7px;
+}
+#zoomclick .btn {
+  display: none !important;
+}
+#zoomslider {
+    display: none !important;
+}
+#zoomslider a.ui-slider-handle.ui-state-default.ui-corner-all {
+  display: none !important;
+}
