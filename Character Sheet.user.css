@@ -6,6 +6,7 @@
 @author      kinchj
 lastupdate:  2021-03-06
 ==/UserStyle== */
+@-moz-document url("https://app.roll20.net/editor/") {
 
 /* SECTION BREAK SECTION BREAK */
 /* ALL PLAYERS OPTIONS */
@@ -259,5 +260,7 @@ div.sheet-row-container:nth-child(2) {
 }
 .charsheet .sheet-subcontainer .sheet-roll-hitdie button[type=roll]{
     margin-left: 15px;
+    
+}
 }
 /* END Remove these after sheet is fixed on death saves*/
