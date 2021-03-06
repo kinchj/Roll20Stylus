@@ -1,12 +1,11 @@
-/* SECTION BREAK SECTION BREAK */
-/* INDIVIDUAL PLAYER OPTIONS */
-/* BLIND ROLL */
-#userscript-BlindRoll {
-    display:inline!important;
-}
-#userscript-brpw {
-    display:inline!important;
-}
+/* ==UserStyle==
+@name        CotN Roll20 Stylus Enhancement
+@namespace   CotN
+@version     1.0.0
+@homepageURL https://github.com/kinchj/Roll20Stylus
+@author      kinchj
+lastupdate:  2021-03-06
+==/UserStyle== */
 
 /* SECTION BREAK SECTION BREAK */
 /* ALL PLAYERS OPTIONS */
