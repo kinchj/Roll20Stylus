@@ -6,6 +6,7 @@
 @author      kinchj
 lastupdate:  2021-03-06
 ==/UserStyle== */
+@-moz-document url("https://app.roll20.net/editor/") {
 
 /* SECTION BREAK SECTION BREAK */
 /* ALL PLAYERS OPTIONS */
@@ -1060,4 +1061,5 @@ div[data-action-type=toggle_status_archery-target] { display: none !important; }
 }
 .ui-dialog .ui-dialog-buttonpane button {
     margin: .05em .04em .05em 0;
+}
 }
