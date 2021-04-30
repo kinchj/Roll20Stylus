@@ -1,0 +1,43 @@
+/* ==UserStyle==
+@name        CotN Character Sheet Enhancement
+@namespace   CotN
+@version     1.0.0
+@homepageURL https://github.com/kinchj/Roll20Stylus
+@author      kinchj
+lastupdate:  2021-03-06
+==/UserStyle== */
+@-moz-document url("https://app.roll20.net/editor/") {
+
+/* Player Names */
+#avatarContainer {
+    margin-bottom: -17px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    width: 1%;
+}
+#playerzone #avatarContainer .player {
+    min-width: 120px;
+    max-width: 250px; 
+}
+div.playername.player-bookmark.ui-draggable, .color_picker, .playercolor {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Color Picker popup window */
+#color_selector {
+    position: fixed;
+    height: 70px;
+    top: auto !important;
+    bottom: 55px !important;
+    left: 130px !important;
+    width: 600px !important; 
+}
+#color_custom > label {
+    display: inline-block;
+}
+#color_value {
+    width: 60px !important;
+}
+
+}
